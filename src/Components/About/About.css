@@ -1,0 +1,17 @@
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #445;
+}
+
+#resume{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
