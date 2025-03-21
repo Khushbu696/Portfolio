@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <section id="projects" className="projects">
             <div className="container">
-                <h2>Projects</h2>
+                <h2 style={{color:"navy"}}>Projects</h2>
                 <div className="projects-grid">
                     {projects.map((project) => (
                         <div key={project.title} className="project-card">

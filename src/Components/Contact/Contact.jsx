@@ -4,8 +4,8 @@ const Contact = () => {
     return (
         <section id="contact" className="contact">
             <div className="container">
-                <h2>Get In Touch</h2>
-                <p>I'm currently looking for new opportunities. Feel free to reach out! You can also check out my <a href="/resume.pdf" download>resume</a> here.</p>
+                <h2 style={{color: "white"}}>Get In Touch</h2>
+                <p>I'm currently looking for new opportunities. Feel free to reach out! You can also check out my <a href="/resume.pdf" download style={{color: "red"}}>resume</a> here.</p>
                 <div className="contact-links">
                     <a href="mailto:khushburpatel06@gmail.com" className="contact-button" target="_blank" rel="noopener noreferrer">
                         Email Me

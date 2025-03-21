@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section id="about" className="about">
             <div className="container">
-                <h2>About Me</h2>
+                <h2 style={{color: "navy"}}>About Me</h2>
                 <p>
                     Hi! I'm Khushbu Patel, an aspiring Software Engineer and B.Tech CSE student. I have a strong passion for web development, specializing in React, JavaScript, and UI/UX design. <br/><br/>
 

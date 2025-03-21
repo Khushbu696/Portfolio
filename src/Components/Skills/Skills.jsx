@@ -23,7 +23,7 @@ const Skills = () => {
     return (
         <section id="skills" className="skills">
             <div className="container">
-                <h2>Skills</h2>
+                <h2 style={{color: "navy"}}>Skills</h2>
                 <div className="skills-grid">
                     {skillsList.map((item) => (
                         <div key={item.category} className="skill-card">
