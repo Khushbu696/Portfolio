@@ -1,0 +1,22 @@
+.floating-button {
+    position: fixed; /* Fixed position to float above other elements */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    width: 60px; /* Width of the button */
+    height: 60px; /* Height of the button */
+    background-color: #007BFF; /* Button color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+  
+.floating-button:hover{
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.floating-button img{
+    width: 35px;
+    vertical-align: middle;
+}
