@@ -1,17 +1,31 @@
-.about {
-    background: white;
+.about{
+    margin: 50px 0;
+    padding: 55px 0;
 }
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
-    font-size: 1.1rem;
-    color: #445;
-}
-
-#resume{
-    display: block;
-    margin: 0 auto;
+.about h2{
+    color: #007BFF;
+    font-size: 2rem;
     text-align: center;
 }
+.about-content{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-right{
+    width: 50%;
+    padding: 20px;
+    color: #212529;
+    font-size: 1.2rem;
+}
+.about-left{
+    width: 50%;
+}
+.about-left img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+
