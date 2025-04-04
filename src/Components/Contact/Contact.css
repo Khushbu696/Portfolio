@@ -1,33 +1,43 @@
-.contact {
-    background: linear-gradient(135deg, #342771, #3900a6);
-    color: white;
+.contact{
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: #F8F9FA;
+}
+.contact h2{
+    color: #007BFF;
+    font-size: 2rem;
     text-align: center;
 }
-
-.contact p {
-    margin-bottom: 30px;
+.contact p{
+    color: #212529;
+    text-align: center;
 }
-
-.contact-links {
+.contact-content{
+    margin: 50px 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
 }
-
-.contact-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background: white;
-    color: #2E3192; 
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 500;
+.contact-content div{
+    box-shadow: 4px 4px 5px lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 16px;
     transition: all 0.3s ease;
 }
-
-.contact-button:hover {
-    background: rgba(255, 255, 255, 0.9);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+.contact-content div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
+.contact-content a{
+    color: #212529;
+    font-weight: 500;
+    text-decoration: none;
+}
+.contact-content img{
+    margin-right: 10px;
+    width: 35px;
+    vertical-align: middle;
+}
+

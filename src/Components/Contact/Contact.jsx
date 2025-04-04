@@ -1,24 +1,24 @@
 import './Contact.css'
+import email from '../../assets/email.png'
+import github from '../../assets/github.png'
+import linkedin from '../../assets/linkedin.png'
 
 const Contact = () => {
     return (
-        <section id="contact" className="contact">
-            <div className="container">
-                <h2 style={{color: "white"}}>Get In Touch</h2>
-                <p>I'm currently looking for new opportunities. Feel free to reach out! You can also check out my <a href="/resume.pdf" download style={{color: "red"}}>resume</a> here.</p>
-                <div className="contact-links">
-                    <a href="mailto:khushburpatel06@gmail.com" className="contact-button" target="_blank" rel="noopener noreferrer">
-                        Email Me
-                    </a>
-                    <a href="https://github.com/Khushbu696" className="contact-button" target="_blank" rel="noopener noreferrer">
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/khushbupatel06" className="contact-button" target="_blank" rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
-                </div>
+        <div className="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                Have a project idea, job opportunity, or just want to say hi? Feel free to reach out!
+            </p>
+
+            <div className="contact-content">
+                <div> <a href="mailto:khushburpatel06@gmail.com" target="_blank" rel="noopener noreferrer"> <img src={email} alt="email logo" /> Email Me </a> </div>
+
+                <div> <a href="https://www.linkedin.com/in/khushbupatel06" target="_blank" rel="noopener noreferrer"> <img src={linkedin} alt="linkedin logo" /> LinkedIn </a> </div>
+
+                <div> <a href="https://github.com/Khushbu696" target="_blank" rel="noopener noreferrer"> <img src={github} alt="github logo" /> GitHub </a> </div>
             </div>
-        </section>
+        </div>
     )
 }
 
