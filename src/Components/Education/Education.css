@@ -1,0 +1,26 @@
+.education{
+    margin: 50px 0;
+    padding: 50px 0;
+}
+.education h2{
+    color: #007BFF;
+    font-size: 2rem;
+    text-align: center;
+}
+.education-container{
+    margin: 50px 0;
+}
+.education-content{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.education-content:hover{
+    transform: translateX(10px);
+}
+
+
