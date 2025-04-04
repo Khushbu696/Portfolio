@@ -1,18 +1,17 @@
-import Header from './Components/Header/Header.jsx'
-import About from './Components/About/About.jsx'
-import Skills from './Components/Skills/Skills.jsx'
-import Projects from './Components/Projects/Projects.jsx'
-import Contact from './Components/Contact/Contact.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Parent from "./Parent.jsx"
+import All_Projects from "./Components/Projects/All_Projects";
 
 function App() {
     return (
-        <div className="app">
-            <Header />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-        </div>
+        <Router>
+            <>
+                <Routes>
+                    <Route path="/" element={<Parent />} />
+                    <Route path="/all-projects" element={<All_Projects />} />
+                </Routes>
+            </>
+        </Router>
     )
 }
 
