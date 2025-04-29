@@ -1,8 +1,9 @@
 import './Projects.css'
 import { useNavigate } from "react-router-dom";
 import portfolio from '../../assets/portfolio.jpeg'
+import weather from '../../assets/weather_app.jpeg'
 import youtube from '../../assets/youtube_clone.jpeg'
-import threads_app from '../../assets/threads_app_clone.jpeg'
+import todo from '../../assets/todo-list.jpeg'
 import arrow from '../../assets/right-arrow.png'
 
 const Projects = () => {
@@ -10,27 +11,31 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "YouTube Clone",
-            description: "Built a YouTube clone using React(Vite) to fetch and display videos from the YouTube API. Implemented search functionality.",
-            techStack: ["React", "YouTube API"],
-            image: youtube,
-            video: "",
-        },
-        {
-            id: 2,
-            title: "Threads App Clone",
-            description: "Building a real-time chat application using React and Chakra UI, implementing user authentication and instant messaging. Following best UI/UX practices for a smooth and responsive chat interface.",
-            techStack: ["React", "Chakra UI"],
-            image: threads_app,
-            video: "",
-        },
-        {
-            id: 3,
+            image: portfolio,
             title: "Portfolio Website",
             description: "My personal portfolio showcasing my projects and skills.",
             techStack: ["React", "CSS"],
-            image: portfolio,
-            video: "",
+        },
+        {
+            id: 2,
+            image: weather,
+            title: "Weather App",
+            description: "Built a simple Weather App that allows users to search for the current weather of any city by fetching live data from the OpenWeatherMap API.",
+            techStack: ["HTML", "CSS", "JavaScript"],
+        },
+        {
+            id: 3,
+            image: youtube,
+            title: "YouTube Clone",
+            description: "Built a YouTube clone using React(Vite) to fetch and display videos from the YouTube API. Implemented search functionality.",
+            techStack: ["React", "YouTube API"],
+        },
+        {
+            id: 4,
+            image: todo,
+            title: "To-Do List",
+            description: "Built a simple and responsive To-Do List application. Easily manage your tasks with an intuitive UI and minimal setup.",
+            techStack: ["React"],
         },
     ];
 
@@ -38,28 +43,19 @@ const Projects = () => {
         <div className="projects">
             <h2>Projects</h2>
             <div className="project-container">
-                {projects.map((project) => (
-                    <div key={project.id} className="project-content">
-                        <div className="project-content-left">
-                            {project.image ? (
-                                <img src={project.image} alt={project.title} className="project-image" />
-                            ) : project.video ? (
-                                <video controls className="project-video">
-                                    <source src={project.video} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            ) : (
-                                <p>No media available</p>
-                            )}
-                        </div>
+                {projects.map((projects) => (
+                    <div key={projects.id} className="project-card">
+                        <img src={projects.image} alt={projects.title} className="project-card-image" />
+                        
+                        <div className="project-card-content">
+                            <h3 className="project-card-title">{projects.title}</h3>
 
-                        <div className="project-content-right">
-                            <h3>{project.title}</h3>
-                            <p>
-                                <b>Description:</b> {project.description}
+                            <p className="project-card-description">
+                                <b>Description: </b> {projects.description}
                             </p>
-                            <p>
-                                <b>Tech Stack:</b> {project.techStack.join(", ")}
+
+                            <p className="project-card-description">
+                                <b>Tech Stack: </b> {projects.techStack.join(', ')}
                             </p>
                         </div>
                     </div>

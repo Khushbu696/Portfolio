@@ -3,7 +3,7 @@
     padding: 50px 0;
 }
 .education h2{
-    color: #007BFF;
+    color: #ff5722;
     font-size: 2rem;
     text-align: center;
 }
@@ -11,7 +11,9 @@
     margin: 50px 0;
 }
 .education-content{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #ff5722;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     border-radius: 10px;
     width: 50%;
     margin: 30px auto;
@@ -21,6 +23,7 @@
 }
 .education-content:hover{
     transform: translateX(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 

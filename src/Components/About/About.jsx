@@ -1,5 +1,5 @@
 import './About.css'
-import holding_flower from '../../assets/holding-flower.svg'
+import girl_profile from '../../assets/girl_profile.svg'
 
 const About = () => {
     return (
@@ -8,7 +8,7 @@ const About = () => {
                 <h2>About Me</h2>
                 <div className="about-content">
                     <div className="about-left">
-                        <img src={holding_flower} alt="holding_flower" />
+                        <img src={girl_profile} alt="holding_flower" />
                     </div>
 
                     <div className="about-right">

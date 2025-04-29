@@ -17,12 +17,12 @@ const Header = () => {
                 </div>
 
                 <div className="navbar-right">
-                    <div onClick={() => scrollToSection("home")}>Home</div>
-                    <div onClick={() => scrollToSection("about")}>About</div>
-                    <div onClick={() => scrollToSection("skills")}>Skills</div>
-                    <div onClick={() => scrollToSection("projects")}>Projects</div>
-                    <div onClick={() => scrollToSection("education")}>Education</div>
-                    <div onClick={() => scrollToSection("contact")}>Contact</div>
+                    <div onClick={() => scrollToSection("home")} id="home-tag">Home</div>
+                    <div onClick={() => scrollToSection("about")} id="about-tag">About</div>
+                    <div onClick={() => scrollToSection("skills")} id="skills-tag">Skills</div>
+                    <div onClick={() => scrollToSection("projects")} id="projects-tag">Projects</div>
+                    <div onClick={() => scrollToSection("education")} id="education-tag">Education</div>
+                    <div onClick={() => scrollToSection("contact")} id="contact-tag">Contact</div>
                 </div>
             </div>
 
@@ -38,26 +38,6 @@ const Header = () => {
                     <img src={workspace} alt="workspace illustration" />
                 </div>
             </div>
-
-
-
-            {/* <div className="home">
-                <div className="home-content">
-                    <h1>Khushbu Patel</h1>
-                    <p>Aspiring Software Engineer | Enthusiastic About Web Development <br />
-                        Eager to explore the world of software development and build impactful solutions.
-                    </p>
-                    <nav>
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </nav>
-                </div>
-                <div className="home-image">
-                    <img src={profile} alt="my profile photo" />
-                </div>
-            </div> */}
         </>
     )
 }

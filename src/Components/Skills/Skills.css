@@ -4,30 +4,49 @@
     /* background-color: #F8F9FA; */
 }
 .skills h2{
-    color: #007BFF;
+    color: #4CAF50;
     font-size: 2rem;
     text-align: center;
 }
+
 .skills-content{
-    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-content-right{
+    width: 40%;
+}
+.skills-content-right img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.skills-content-left{
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
 .skills-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     border-radius: 10px;
-    width: 25%;
+    width: 40%;
     margin: 20px;
     padding: 10px;
     transition: all 0.3s ease;
 }
 .skills-card:hover{
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .skills-list{
     display: flex;
+    flex-wrap: wrap;
 }
 .skills-list div{
     border-radius: 10px;

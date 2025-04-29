@@ -28,10 +28,20 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.navbar-right div:hover{
+/* .navbar-right div:hover{
     background-color: #f7f7f7;
     color: black;
-}
+} */
+ #home-tag{ color: #007BFF; }
+ #about-tag{ color: #E91E63; }
+ #skills-tag{ color: #4CAF50; }
+ #projects-tag{ color: #9C27B0; }
+ #education-tag{ color: #FF5722; }
+ #contact-tag{ color: #FFC107; }
+
+ #home-tag:hover, #about-tag:hover, #skills-tag:hover, #projects-tag:hover, #education-tag:hover, #contact-tag:hover{
+    background-color: #f7f7f7;
+ }
 
 
 
