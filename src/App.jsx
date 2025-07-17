@@ -1,18 +1,29 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Parent from "./Parent.jsx"
-import All_Projects from "./Components/Projects/All_Projects";
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
 
-function App() {
+const App = () => {
     return (
         <Router>
-            <>
-                <Routes>
-                    <Route path="/" element={<Parent />} />
-                    <Route path="/all-projects" element={<All_Projects />} />
-                </Routes>
-            </>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/education" element={<Education />} />
+                <Route path="/certificates" element={<Certificates />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
         </Router>
-    )
-}
+    );
+};
 
-export default App
+export default App;

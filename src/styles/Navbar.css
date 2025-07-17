@@ -1,0 +1,35 @@
+.navbar {
+  background-color: white;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #333333 ;
+  font-weight: 700;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links div {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #333333 ;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
