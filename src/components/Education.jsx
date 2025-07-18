@@ -14,7 +14,7 @@ const Education = () => {
             degree: "Higher Secondary Education",
             university: "Parth School of Science and Competition",
             percentage: "Percentage 68%",
-            duration: "2022 - 2024",
+            duration: "2023 - 2024",
         },
     ];
 

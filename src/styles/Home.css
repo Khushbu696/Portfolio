@@ -1,12 +1,15 @@
 .home {
   margin-top: 74px;
   padding: 2rem;
-  height: 69vh;
+  height: auto;
   background-color: white;
-
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+}
+
+.home-text {
+  text-align: center;
 }
 
 .home-text h1 {
@@ -23,11 +26,11 @@
 
 .home-img img {
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .cta-buttons {
@@ -83,7 +86,7 @@
   cursor: pointer;
 }
 
-.home-icons{
+.home-icons {
   padding: 2rem;
   background-color: white;
   display: flex;
@@ -99,25 +102,92 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0) scale(1);
   }
+
   50% {
     transform: translateY(-10px) scale(1.05);
   }
 }
 
 /* Add slight delay between each icon for a wave effect */
-.home-icons img:nth-child(1) { animation-delay: 0s; }
-.home-icons img:nth-child(2) { animation-delay: 0.2s; }
-.home-icons img:nth-child(3) { animation-delay: 0.4s; }
-.home-icons img:nth-child(4) { animation-delay: 0.6s; }
-.home-icons img:nth-child(5) { animation-delay: 0.8s; }
-.home-icons img:nth-child(6) { animation-delay: 1s; }
-.home-icons img:nth-child(7) { animation-delay: 1.2s; }
+.home-icons img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.home-icons img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.home-icons img:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.home-icons img:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.home-icons img:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.home-icons img:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.home-icons img:nth-child(7) {
+  animation-delay: 1.2s;
+}
 
 .home-icons img:hover {
   animation-play-state: paused; /* Pauses animation on hover */
   filter: brightness(1.2) drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
   transform: scale(1.2) rotate(10deg);
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-text p {
+    font-size: 1.2rem;
+  }
+
+  .home-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .home-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .home-icons img {
+    width: 50px;
+    height: 50px;
+  }
 }

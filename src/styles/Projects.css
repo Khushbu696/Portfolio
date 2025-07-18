@@ -3,7 +3,7 @@
   text-align: center;
   margin-top: 74px;
   padding: 2rem;
-  height: 100vh;
+  height: auto;
 }
 
 .projects h1 {
@@ -54,10 +54,6 @@
   margin: 0.5rem 0;
 }
 
-/* .card-description b {
-  color: #006D77;
-} */
-
 .card a {
   text-decoration: none;
 }
@@ -76,4 +72,52 @@
 
 .card button:hover {
   background-color: #005fd4;
+}
+
+@media (max-width: 768px) {
+  .projects h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .card button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects h1 {
+    font-size: 2rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 0 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .card button {
+    font-size: 0.9rem;
+  }
 }

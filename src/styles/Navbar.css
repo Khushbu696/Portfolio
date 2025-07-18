@@ -1,14 +1,12 @@
 .navbar {
   background-color: white;
-  color: white;
+  color: #333333;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  color: #333333 ;
   font-weight: 700;
-
   position: fixed;
   width: 100%;
   top: 0;
@@ -25,11 +23,48 @@
 }
 
 .nav-links a {
-  color: #333333 ;
+  color: #333333;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #007BFF;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links div {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .navbar .toggle-button {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links div {
+    margin: 0.5rem 0;
+  }
 }

@@ -46,3 +46,44 @@
 .education-content p b {
     color: #0077ff;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #education h1 {
+        font-size: 2.5rem;
+    }
+
+    .education-content {
+        padding: 1.5rem;
+    }
+
+    .education-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .education-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #education {
+        padding: 2rem 1rem;
+    }
+
+    #education h1 {
+        font-size: 2rem;
+    }
+
+    .education-content {
+        padding: 1rem;
+    }
+
+    .education-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .education-content p {
+        font-size: 0.85rem;
+    }
+}
