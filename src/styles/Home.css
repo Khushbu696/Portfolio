@@ -2,14 +2,10 @@
   margin-top: 74px;
   padding: 2rem;
   height: auto;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.home-text {
-  text-align: center;
 }
 
 .home-text h1 {
@@ -113,7 +109,6 @@
   }
 }
 
-/* Add slight delay between each icon for a wave effect */
 .home-icons img:nth-child(1) {
   animation-delay: 0s;
 }
@@ -143,7 +138,7 @@
 }
 
 .home-icons img:hover {
-  animation-play-state: paused; /* Pauses animation on hover */
+  animation-play-state: paused;
   filter: brightness(1.2) drop-shadow(0 0 8px rgba(0, 150, 255, 0.6));
   transform: scale(1.2) rotate(10deg);
 }
@@ -152,6 +147,10 @@
   .home {
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .home-text{
+    text-align: center;
   }
 
   .home-text h1 {
