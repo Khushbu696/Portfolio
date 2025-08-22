@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --accent-start: #005CFF;
+    --accent-end: #00D2FF;
+    --light-bg: #e0e0e0;
+    --light-shadow: #ffffff;
+    --dark-bg: #1e1e1e;
+    --dark-shadow: #2a2a2a;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+}
+
+body.dark {
+    background-color: var(--dark-bg);
+}
