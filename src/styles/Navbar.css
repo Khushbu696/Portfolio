@@ -1,0 +1,108 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 14px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-text);
+    user-select: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 6px 0;
+}
+
+.navbar-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--accent);
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover::after {
+    width: 100%;
+}
+
+.navbar-menu a:hover {
+    color: var(--accent);
+}
+
+.theme-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(30deg);
+}
+
+.theme-btn img {
+    width: 26px;
+    height: 26px;
+}

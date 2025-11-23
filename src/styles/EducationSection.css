@@ -1,0 +1,124 @@
+.education-section {
+    width: 100%;
+    padding: 100px 10%;
+    background: var(--background);
+    transition: 0.3s ease;
+}
+
+.education-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
+.education-subtext {
+    text-align: center;
+    color: var(--secondary-text);
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+/* Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dark .education-container::before {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Cards */
+.education-card {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 24px 32px 24px 60px;
+    border-radius: 16px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.dark .education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Timeline Dot */
+.education-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    position: absolute;
+    left: 12px;
+    top: 28px;
+}
+
+/* Headings */
+.education-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: 6px;
+}
+
+/* Duration */
+.education-duration {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* School */
+.education-school {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: var(--primary-text);
+    font-weight: 500;
+}
+
+/* CGPA & Percentage */
+.education-cgpa {
+    margin-top: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.dark .education-cgpa {
+    color: var(--accent);
+}
+
+/* Description */
+.education-description {
+    margin-top: 10px;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .education-container::before {
+        left: 12px;
+    }
+
+    .education-card {
+        padding-left: 48px;
+    }
+
+    .education-dot {
+        left: 4px;
+    }
+}

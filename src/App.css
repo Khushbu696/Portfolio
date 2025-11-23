@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+:root {
+    --background: #FFFFFF;
+    --section-bg: #F7F7F7;
+    --primary-text: #1A1A1A;
+    --secondary-text: #444444;
+    --gradient: linear-gradient(135deg, #00C6FF, #0072FF);
+    --accent: #0072FF;
+}
+
+.dark {
+    --background: #121212;
+    --section-bg: #1F1F1F;
+    --primary-text: #E0E0E0;
+    --secondary-text: #A0A0A0;
+    --gradient: linear-gradient(135deg, #FF512F, #DD2476);
+    --accent: #DD2476;
+}
