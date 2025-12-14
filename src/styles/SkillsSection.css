@@ -1,116 +1,92 @@
 .skills-section {
     width: 100%;
-    min-height: 90vh;
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 10%;
+    padding: 120px 0;
+    background: var(--background);
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Title and Subtext */
 .skills-title {
     font-size: 2.8rem;
     font-weight: 800;
-    color: var(--accent);
-    margin-bottom: 16px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 12px;
 }
 
 .skills-subtext {
     font-size: 1.15rem;
     color: var(--secondary-text);
     max-width: 800px;
-    margin-bottom: 64px;
+    margin: 0 auto 64px;
     line-height: 1.6;
 }
 
-/* Grid layout for cards */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
-    width: 100%;
-    max-width: 1200px;
+    width: min(1200px, 90%);
+    margin: 0 auto;
 }
 
-/* Skill Card */
 .skill-card {
-    background-color: rgba(0, 0, 0, 0.02);
+    background: var(--card-bg);
     border-radius: 20px;
-    padding: 32px;
-    text-align: left;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 40px 32px;
+    border: 1px solid var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Icon */
-.skill-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.04);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.skill-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--primary-text);
     margin-bottom: 20px;
 }
 
-.skill-icon img {
-    width: 28px;
-    height: 28px;
+.skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
 }
 
-/* Card Title */
-.skill-card h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
+.skill-pill {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: rgba(0, 114, 255, 0.08);
     color: var(--accent);
-    margin-bottom: 16px;
+    border: 1px solid rgba(0, 114, 255, 0.18);
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
-/* List */
-.skill-card ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 0;
-    margin: 0;
+.skill-pill:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 114, 255, 0.35);
 }
 
-.skill-card li {
-    font-size: 1rem;
+.dark .skill-pill {
+    background: rgba(255, 255, 255, 0.06);
     color: var(--secondary-text);
-    margin-bottom: 8px;
-    transition: color 0.3s ease;
-}
-
-.skill-card li::marker {
-    color: var(--accent);
-}
-
-.skill-card li:hover {
-    color: var(--accent);
-}
-
-/* Dark Mode */
-.dark .skill-card {
-    background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dark .skill-icon {
-    background-color: rgba(255, 255, 255, 0.08);
+.dark .skill-pill:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .skills-title {
         font-size: 2.2rem;
@@ -118,5 +94,6 @@
 
     .skills-subtext {
         font-size: 1rem;
+        margin-bottom: 48px;
     }
 }

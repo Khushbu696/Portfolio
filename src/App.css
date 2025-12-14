@@ -14,6 +14,8 @@ body {
     --secondary-text: #444444;
     --gradient: linear-gradient(135deg, #00C6FF, #0072FF);
     --accent: #0072FF;
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --card-border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .dark {
@@ -21,6 +23,8 @@ body {
     --section-bg: #1F1F1F;
     --primary-text: #E0E0E0;
     --secondary-text: #A0A0A0;
-    --gradient: linear-gradient(135deg, #FF512F, #DD2476);
-    --accent: #DD2476;
+    --gradient: linear-gradient(135deg, #00C6FF, #0072FF);
+    --accent: #0072FF;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.12);
 }

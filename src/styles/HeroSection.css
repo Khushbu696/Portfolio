@@ -1,99 +1,155 @@
 .hero-section {
     width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    padding: 140px 0 120px;
     display: flex;
     justify-content: center;
+    background: var(--background);
+}
+
+.hero-container {
+    width: min(1200px, 92%);
+    display: flex;
     align-items: center;
-    text-align: center;
-    padding: 0 10%;
+    justify-content: space-between;
+    gap: 60px;
 }
 
-/* Dark gradient overlay for visibility */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    backdrop-filter: blur(1px);
+.hero-text {
+    flex: 1;
 }
 
-/* Centered content */
-.hero-center-content {
-    position: relative;
-    z-index: 5;
-    max-width: 900px;
+.hero-eyebrow {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-bottom: 14px;
 }
 
-.hero-center-content h1 {
+.hero-title {
+    font-size: 3.4rem;
     font-weight: 800;
-    font-size: 3.5rem;
-    color: #ffffff;
+    line-height: 1.15;
     margin-bottom: 20px;
+    color: var(--primary-text);
 }
 
-.hero-center-content p {
-    font-size: 1.2rem;
-    color: #eaeaea;
-    margin-bottom: 35px;
-    line-height: 1.6;
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--secondary-text);
+    max-width: 520px;
+    margin-bottom: 36px;
 }
 
-/* Buttons */
+.hero-highlight {
+    color: var(--accent);
+}
+
 .hero-buttons {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
-.hire-btn {
+.view-my-work {
     background: var(--gradient);
     color: #fff;
     font-weight: 600;
-    padding: 14px 36px;
-    border-radius: 36px;
+    padding: 14px 34px;
+    border-radius: 14px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
-.hire-btn:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
+.view-my-work:hover {
+    transform: translateY(-3px);
 }
 
-.previous-works {
-    padding: 14px 36px;
-    border-radius: 36px;
-    border: 2px solid #fff;
-    color: #fff;
+.resume {
+    padding: 14px 34px;
+    border-radius: 14px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: 0.3s ease;
+    font-weight: 600;
+    transition: background 0.25s ease, color 0.25s ease;
 }
 
-.previous-works:hover {
-    background: rgba(255, 255, 255, 0.15);
+.resume:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .hero-center-content h1 {
+.hero-image-card {
+    width: 380px;
+    height: 430px;
+    border-radius: 48px 10px 48px 10px;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(10px);
+    transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .hero-image-card {
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.65);
+}
+
+.hero-image-card:hover {
+    border-radius: 10px 48px 10px 48px;
+}
+
+.hero-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 42px;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 36px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image-card {
+        width: 320px;
+        height: 370px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 120px 0 100px;
+    }
+
+    .hero-title {
         font-size: 2.4rem;
     }
 
-    .hero-center-content p {
+    .hero-subtitle {
         font-size: 1rem;
     }
 
     .hero-buttons {
         flex-direction: column;
+        gap: 14px;
+    }
+
+    .view-my-work,
+    .resume {
+        width: 100%;
+        text-align: center;
     }
 }
