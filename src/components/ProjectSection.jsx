@@ -1,5 +1,6 @@
 import "../styles/ProjectSection.css";
 import { useState } from "react";
+import mindbloom from "../assets/projects/mindbloom.jpeg";
 import flipmind from "../assets/projects/flipmind.jpeg";
 import quotecraft from "../assets/projects/quotecraft.jpeg";
 import weather from "../assets/projects/weather_app.jpeg";
@@ -10,6 +11,17 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
+            title: "MindBloom",
+            category: "MERN Stack",
+            description:
+                "Built a full-stack mental wellness platform with authentication, habit tracking, mood logs, community posts, and rewards system.",
+            tech: ["React", , "Node.js", "Express", "MongoDB"],
+            image: mindbloom,
+            code: "https://github.com/Khushbu696/MindBloom",
+            demo: "https://k-mindbloom.netlify.app",
+        },
+        {
+            id: 2,
             title: "FlipMind",
             category: "Web Development",
             description:
@@ -20,7 +32,7 @@ const ProjectsSection = () => {
             demo: "https://flipmind.netlify.app/",
         },
         {
-            id: 2,
+            id: 3,
             title: "QuoteCraft",
             category: "Web Development",
             description:
@@ -31,7 +43,7 @@ const ProjectsSection = () => {
             demo: "https://k-quotecraft.netlify.app/",
         },
         {
-            id: 3,
+            id: 4,
             title: "Weather App",
             category: "Web Development",
             description:
