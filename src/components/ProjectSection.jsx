@@ -1,8 +1,8 @@
 import "../styles/ProjectSection.css";
 import { useState } from "react";
-import mindbloom from "../assets/projects/mindbloom.jpeg";
 import flipmind from "../assets/projects/flipmind.jpeg";
 import quotecraft from "../assets/projects/quotecraft.jpeg";
+import weather from "../assets/projects/weather_app.jpeg";
 
 const ProjectsSection = () => {
     const [activeFilter, setActiveFilter] = useState("All");
@@ -10,17 +10,6 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
-            title: "MindBloom",
-            category: "MERN Stack",
-            description:
-                "A MERN app that tracks mental wellness through mood logs, habit-building challenges, promoting self-care with rewards.",
-            tech: ["React", "Node.js", "MongoDB"],
-            image: mindbloom,
-            code: "#",
-            demo: "#",
-        },
-        {
-            id: 2,
             title: "FlipMind",
             category: "Web Development",
             description:
@@ -31,7 +20,7 @@ const ProjectsSection = () => {
             demo: "https://flipmind.netlify.app/",
         },
         {
-            id: 3,
+            id: 2,
             title: "QuoteCraft",
             category: "Web Development",
             description:
@@ -41,6 +30,17 @@ const ProjectsSection = () => {
             code: "https://github.com/Khushbu696/QuoteCraft",
             demo: "https://k-quotecraft.netlify.app/",
         },
+        {
+            id: 3,
+            title: "Weather App",
+            category: "Web Development",
+            description:
+                "Weather App is a simple application that fetches real-time weather data using the OpenWeather API. It displays current temperature, weather conditions and wind speed.",
+            tech: ["React"],
+            image: weather,
+            code: "https://github.com/Khushbu696/Weather_app",
+            demo: "https://khushbu-weather-app.netlify.app/",
+        }
     ];
 
     const filteredProjects =

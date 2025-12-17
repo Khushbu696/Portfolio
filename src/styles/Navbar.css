@@ -62,6 +62,10 @@
     text-decoration: none;
 }
 
+.navbar-menu a:hover{
+    color: var(--accent);
+}
+
 .navbar-actions {
     display: flex;
     gap: 12px;
