@@ -3,25 +3,25 @@ import profile from "../assets/profile.jpeg";
 
 const HeroSection = () => {
     return (
-        <section className="hero-section">
+        <section className="hero-section" id="home">
             <div className="hero-container">
                 <div className="hero-text">
-                    <p className="hero-eyebrow">
-                        Full-Stack Developer • UI/UX Designer
-                    </p>
 
                     <h1 className="hero-title">
-                        Hello, I'm <span className="hero-highlight">Khushbu.</span>
+                        Full-stack developer specialized in building scalable,
+                        user-centered digital products
                     </h1>
 
                     <p className="hero-subtitle">
-                        I build modern, scalable digital experiences with clean
-                        architecture and intuitive design.
+                        I’m Khushbu — a multidisciplinary developer and UI/UX designer
+                        who builds performant web applications with clean architecture,
+                        intuitive interfaces, and meaningful user experiences from
+                        end to end.
                     </p>
 
                     <div className="hero-buttons">
                         <button className="view-my-work">
-                            View My Work
+                            <a href="#projects">Explore My Work</a>
                         </button>
 
                         <a
