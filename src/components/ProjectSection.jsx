@@ -11,21 +11,21 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
-            title: "MindBloom",
+            title: "MindBloom — Mental Wellness Platform",
             category: "MERN Stack",
             description:
-                "Built a full-stack mental wellness platform with authentication, habit tracking, mood logs, community posts, and rewards system.",
-            tech: ["React", , "Node.js", "Express", "MongoDB"],
+                "A full-stack wellness platform with authentication, habit tracking, mood logs, community features, and a rewards system.",
+            tech: ["React", "Node.js", "Express", "MongoDB"],
             image: mindbloom,
             code: "https://github.com/Khushbu696/MindBloom",
             demo: "https://k-mindbloom.netlify.app",
         },
         {
             id: 2,
-            title: "FlipMind",
-            category: "Web Development",
+            title: "FlipMind — Memory Card Game",
+            category: "React Web App",
             description:
-                "A fun and interactive memory game where players flip cards to match pairs with smooth animations and responsive design.",
+                "An interactive card-matching game where players flip tiles to find pairs, featuring smooth animations and responsive design.",
             tech: ["React"],
             image: flipmind,
             code: "https://github.com/Khushbu696/FlipMind",
@@ -33,10 +33,10 @@ const ProjectsSection = () => {
         },
         {
             id: 3,
-            title: "QuoteCraft",
-            category: "Web Development",
+            title: "QuoteCraft — Inspirational Quotes Generator",
+            category: "React Web App",
             description:
-                "A simple quote generator that displays random motivational quotes with a clean and inspiring UI.",
+                "A minimal quote generator that displays motivational quotes with a clean interface and lightweight UI experience.",
             tech: ["React"],
             image: quotecraft,
             code: "https://github.com/Khushbu696/QuoteCraft",
@@ -44,10 +44,10 @@ const ProjectsSection = () => {
         },
         {
             id: 4,
-            title: "Weather App",
-            category: "Web Development",
+            title: "Weather App — Real-time Weather Dashboard",
+            category: "React Web App",
             description:
-                "Weather App is a simple application that fetches real-time weather data using the OpenWeather API. It displays current temperature, weather conditions and wind speed.",
+                "A weather dashboard that fetches real-time temperature, wind speed, and climate conditions using OpenWeather API.",
             tech: ["React"],
             image: weather,
             code: "https://github.com/Khushbu696/Weather_app",
@@ -65,64 +65,73 @@ const ProjectsSection = () => {
             <h2 className="projects-title">Featured Projects</h2>
 
             <p className="projects-subtext">
-                A showcase of my recent work across various technologies and domains.
+                A collection of impactful projects where I combined full-stack engineering
+                and user-centered design to build scalable digital experiences.
             </p>
 
             <div className="filter-buttons">
-                {["All", "Web Development", "MERN Stack"].map((filter) => (
-                    <button
-                        key={filter}
-                        className={`filter-btn ${activeFilter === filter ? "active" : ""
-                            }`}
-                        onClick={() => setActiveFilter(filter)}
-                    >
-                        {filter}
-                    </button>
-                ))}
+                {["All", "MERN Stack", "React Web App"].map(
+                    (filter) => (
+                        <button
+                            key={filter}
+                            className={`filter-btn ${activeFilter === filter ? "active" : ""
+                                }`}
+                            onClick={() => setActiveFilter(filter)}
+                        >
+                            {filter}
+                        </button>
+                    )
+                )}
             </div>
 
-            <div className="projects-container">
+            <div className="projects-grid">
                 {filteredProjects.map((project) => (
                     <div className="project-card" key={project.id}>
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            className="project-image"
-                        />
 
-                        <h3 className="project-title">{project.title}</h3>
+                        <div className="project-text">
+                            <p className="project-title">{project.title}</p>
 
-                        <p className="project-description">
-                            {project.description}
-                        </p>
+                            <p className="project-description">
+                                {project.description}
+                            </p>
 
-                        <div className="project-tags">
-                            {project.tech.map((tech) => (
-                                <span className="tag" key={tech}>
-                                    {tech}
-                                </span>
-                            ))}
+                            <div className="tech-stack">
+                                {project.tech.map((tech, index) => (
+                                    <span className="tech-chip" key={index}>
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
+                            <div className="project-actions">
+                                <a
+                                    href={project.code}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="code-btn"
+                                >
+                                    Code
+                                </a>
+
+                                <a
+                                    href={project.demo}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="demo-btn"
+                                >
+                                    Demo
+                                </a>
+                            </div>
                         </div>
 
-                        <div className="project-buttons">
-                            <a
-                                href={project.code}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn code-btn"
-                            >
-                                Code
-                            </a>
-
-                            <a
-                                href={project.demo}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn demo-btn"
-                            >
-                                Demo
-                            </a>
+                        <div className="project-image-wrapper">
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="project-image"
+                            />
                         </div>
+
                     </div>
                 ))}
             </div>
