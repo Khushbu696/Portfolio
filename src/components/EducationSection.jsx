@@ -14,7 +14,7 @@ const EducationSection = () => {
                 <div className="education-card">
                     <div className="education-dot"></div>
 
-                    <h3>B.Tech in Computer Science & Engineering</h3>
+                    <p className="degree">B.Tech in Computer Science & Engineering</p>
                     <span className="education-duration">2024 – 2028</span>
 
                     <p className="education-school">
@@ -36,7 +36,7 @@ const EducationSection = () => {
                 <div className="education-card">
                     <div className="education-dot"></div>
 
-                    <h3>Higher Secondary School</h3>
+                    <p className="degree">Higher Secondary School</p>
                     <span className="education-duration">2023 – 2024</span>
 
                     <p className="education-school">

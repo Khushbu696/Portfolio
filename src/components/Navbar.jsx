@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 
 import sun from "../assets/icons/light_mode.png";
 import moon from "../assets/icons/dark_mode.png";
-import menu from "../assets/icons/menu.png";
+import menu from "../assets/icons/menu2.png";
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState(true);
@@ -23,8 +23,9 @@ const Navbar = () => {
         <>
             <nav className="navbar">
                 <div className="navbar-left">
-                    <div className="navbar-logo">K</div>
-                    <span className="navbar-name">Khushbu</span>
+                    <span className="navbar-name">
+                        <a href="#home">Khushbu</a>
+                    </span>
                 </div>
 
                 <ul className="navbar-menu">
@@ -39,6 +40,7 @@ const Navbar = () => {
                             href="/Patel_Khushbu.pdf"
                             target="_blank"
                             rel="noreferrer"
+                            className="resume-btn"
                         >
                             Resume
                         </a>
@@ -83,6 +85,7 @@ const Navbar = () => {
                     href="/Patel_Khushbu.pdf"
                     target="_blank"
                     rel="noreferrer"
+                    className="resume-btn"
                 >
                     Resume
                 </a>

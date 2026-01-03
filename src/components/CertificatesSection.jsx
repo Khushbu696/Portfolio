@@ -22,7 +22,7 @@ const CertificatesSection = () => {
 
     return (
         <section id="certificates" className="cert-section">
-            <h2 className="cert-title">Certificates</h2>
+            <h2 className="cert-heading">Certificates</h2>
 
             <p className="cert-subtext">
                 A showcase of courses and certifications I’ve earned across various technologies.
@@ -37,7 +37,7 @@ const CertificatesSection = () => {
                             className="cert-thumbnail"
                         />
 
-                        <h3>{cert.title}</h3>
+                        <p className="cert-title">{cert.title}</p>
                         <p className="cert-issuer">{cert.issuer}</p>
 
                         <button

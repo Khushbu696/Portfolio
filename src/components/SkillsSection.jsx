@@ -12,7 +12,7 @@ const SkillsSection = () => {
 
             <div className="skills-container">
                 <div className="skill-card">
-                    <h3>Programming Languages</h3>
+                    <p>Programming Languages</p>
                     <div className="skill-buttons">
                         <span className="skill-pill">JavaScript</span>
                         <span className="skill-pill">C++</span>
@@ -22,7 +22,7 @@ const SkillsSection = () => {
                 </div>
 
                 <div className="skill-card">
-                    <h3>Frontend Development</h3>
+                    <p>Frontend Development</p>
                     <div className="skill-buttons">
                         <span className="skill-pill">React</span>
                         <span className="skill-pill">Next.js</span>
@@ -32,7 +32,7 @@ const SkillsSection = () => {
                 </div>
 
                 <div className="skill-card">
-                    <h3>Backend Development</h3>
+                    <p>Backend Development</p>
                     <div className="skill-buttons">
                         <span className="skill-pill">Node.js</span>
                         <span className="skill-pill">Express.js</span>
