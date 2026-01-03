@@ -33,37 +33,35 @@
     gap: 12px;
 }
 
-.navbar-logo {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--gradient);
-    color: #fff;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar-name {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.navbar-name {
-    font-weight: 700;
-    color: var(--primary-text);
+.navbar-name a{
+    text-decoration: none;
+    background: linear-gradient(90deg, #6DDCFF, #F6A6FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .navbar-menu {
+    font-family: "Inter", sans-serif;
     display: flex;
     gap: 26px;
     list-style: none;
 }
 
 .navbar-menu a {
-    color: var(--secondary-text);
+    color: var(--muted-text);
     font-weight: 600;
     text-decoration: none;
 }
 
 .navbar-menu a:hover{
-    color: var(--accent);
+    color: var(--secondary-text);
 }
 
 .navbar-actions {
@@ -71,13 +69,14 @@
     gap: 12px;
 }
 
+
 .theme-btn,
 .menu-btn {
+    background-color: var(--card-bg);
+    border: none;
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: var(--card-border);
-    background: var(--card-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +111,6 @@
         display: inline-block;
         font-size: 16px;
         font-weight: 700;
-        color: var(--primary-text);
         white-space: nowrap;
     }
 }

@@ -1,107 +1,73 @@
 .footer {
-    padding: 60px 10%;
-    background: var(--section-bg);
-    color: var(--primary-text);
+    padding: 40px 10%;
+    background: var(--card-bg);
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 }
 
-.footer-brand {
-    max-width: 260px;
+.footer-copyright {
+    font-size: 0.95rem;
+    color: var(--muted-text);
 }
 
-.footer-logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 12px;
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.footer-brand p {
-    color: var(--secondary-text);
-    line-height: 1.6;
-}
-
-.footer-links h3,
-.footer-socials h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 16px;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
+.footer-email {
     text-decoration: none;
     color: var(--secondary-text);
     transition: color 0.25s ease;
 }
 
-.footer-links a:hover {
+.footer-email:hover {
     color: var(--accent);
 }
 
 .social-icons {
     display: flex;
-    gap: 16px;
+    gap: 12px;
 }
 
 .social-icons img {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     padding: 6px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.06);
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .dark .social-icons img {
     filter: invert(1);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .social-icons img:hover {
     transform: translateY(-3px);
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
-.footer-line {
-    margin: 40px 0 20px;
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.dark .footer-line {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.footer-bottom {
-    text-align: center;
-    font-size: 0.95rem;
-    color: var(--secondary-text);
-}
-
-@media (max-width: 900px) {
+/* Mobile layout */
+@media (max-width: 800px) {
     .footer-container {
         flex-direction: column;
-        gap: 32px;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
