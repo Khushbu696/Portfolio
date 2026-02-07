@@ -1,0 +1,90 @@
+.footer {
+  padding: 40px 10%;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dark .footer {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--secondary-text);
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+/* =========================
+   RESPONSIVE IMPROVEMENTS
+   ========================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 36px 8%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center; /* Center instead of left */
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 6%;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons a {
+    font-size: 0.9rem;
+  }
+}

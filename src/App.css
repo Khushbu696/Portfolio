@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --background: #FAFAFC;
+    --primary-text: #1A1A1A;
+    --secondary-text: #6B6B75;
+    --accent: #D6006F;
+    --card-background: #FFFFFF;
+}
+
+
+.dark{
+    --background: #121212;
+    --primary-text: #EDEDED;
+    --secondary-text: #A1A1AA;
+    --accent: #D6006F;
+    --card-background: #1A1A1A;
+}

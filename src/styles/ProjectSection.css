@@ -1,0 +1,242 @@
+.projects-section {
+  width: 100%;
+  padding: 120px 8%;
+  background: var(--background);
+  color: var(--primary-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-title {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.5px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 70px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 70px;
+}
+
+.filter-btn {
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px 22px;
+  border-radius: 20px;
+  color: var(--primary-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    border 0.25s ease,
+    transform 0.2s ease,
+    color 0.25s ease;
+}
+
+.dark .filter-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.filter-btn:hover,
+.dark .filter-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filter-btn.active,
+.dark .filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   PROJECT CARD
+   ========================= */
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* 🔥 image now stacks on top */
+  gap: 20px;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--card-background);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE SECTION */
+
+.project-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto; /* 🔥 No fixed height */
+  border-radius: 14px;
+  object-fit: contain; /* 🔥 Prevent cropping */
+  display: block;
+}
+
+/* TEXT SECTION */
+
+.project-text {
+  width: 100%;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary-text);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.code-btn,
+.demo-btn {
+  padding: 10px 22px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  color: var(--primary-text);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.code-btn:hover,
+.demo-btn:hover {
+  transform: translateY(-3px);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.dark .code-btn,
+.dark .demo-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dark .code-btn:hover,
+.dark .demo-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.dark .project-card {
+  background: var(--card-background);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 100px 6%;
+  }
+
+  .projects-title {
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 90px 5%;
+  }
+
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 80px 4%;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .code-btn,
+  .demo-btn {
+    width: 100%;
+  }
+}

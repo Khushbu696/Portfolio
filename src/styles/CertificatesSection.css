@@ -1,0 +1,195 @@
+.cert-section {
+  width: 100%;
+  padding: 120px 10%;
+  text-align: center;
+  background: var(--background);
+}
+
+.cert-heading {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.5px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 70px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: var(--card-background);
+  padding: 24px;
+  border-radius: 18px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.cert-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.cert-title {
+  color: var(--primary-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cert-issuer {
+  color: var(--secondary-text);
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.cert-btn {
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: var(--primary-text);
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark .cert-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cert-btn:hover,
+.dark .cert-btn:hover {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* =========================
+   MODAL
+   ========================= */
+
+.cert-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.cert-modal-content {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cert-modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.cert-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE IMPROVEMENTS
+   ========================= */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .cert-section {
+    padding: 100px 8%;
+  }
+
+  .cert-heading {
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .cert-section {
+    padding: 90px 6%;
+  }
+
+  .cert-heading {
+    font-size: 2.2rem;
+  }
+
+  .cert-title {
+    font-size: 1.1rem;
+  }
+
+  .cert-issuer {
+    font-size: 0.9rem;
+  }
+
+  .cert-thumbnail {
+    height: 160px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .cert-section {
+    padding: 80px 5%;
+  }
+
+  .cert-heading {
+    font-size: 2rem;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .cert-title {
+    font-size: 1rem;
+  }
+
+  .cert-issuer {
+    font-size: 0.85rem;
+  }
+
+  .cert-btn {
+    width: 100%;
+  }
+
+  .cert-thumbnail {
+    height: 150px;
+  }
+}

@@ -1,0 +1,42 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #000; /* keep it dramatic */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.preloader-content {
+  text-align: center;
+}
+
+.preloader-name {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-bottom: 28px;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.progress-bar {
+  width: 260px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff0084, #d6006f);
+  border-radius: 10px;
+}
