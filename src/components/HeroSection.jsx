@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "../styles/HeroSection.css";
-import profile from "../assets/me-5.png";
 
 const HeroSection = () => {
   const heroRef = useRef(null);
@@ -107,7 +106,7 @@ const HeroSection = () => {
         <div className="hero-right">
           <div className="hero-circle"></div>
 
-          <img src={profile} alt="Khushbu Patel" className="hero-image" />
+          <img src="https://res.cloudinary.com/ddbya1gnh/image/upload/v1771579812/me-5_cg2pba.png" alt="Khushbu Patel" className="hero-image" />
         </div>
       </div>
     </section>
