@@ -26,6 +26,30 @@ const Footer = () => {
                         >
                             LinkedIn
                         </a>
+
+                        <a
+                            href="https://leetcode.com/u/Khushbu-Patel/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Leetcode
+                        </a>
+
+                        <a
+                            href="https://www.youtube.com/@KhushbuPatel-06"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Youtube
+                        </a>
+
+                        <a
+                            href="https://x.com/Khushbu696"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            X (Twitter)
+                        </a>
                     </div>
                 </div>
 
