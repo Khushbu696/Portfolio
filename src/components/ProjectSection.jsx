@@ -3,10 +3,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/ProjectSection.css";
 
-import mindbloom from "../assets/projects/mindbloom.jpeg";
-import flipmind from "../assets/projects/flipmind.jpeg";
-import quotecraft from "../assets/projects/quotecraft.jpeg";
-import weather from "../assets/projects/weather_app.jpeg";
+import mindbloom from "../assets/projects/mindbloom.png";
+import flipmind from "../assets/projects/flipmind.png";
+import quotecraft from "../assets/projects/quotecraft.png";
+import weather from "../assets/projects/weather_app.png";
+import calculator from "../assets/projects/calculator.png";
+import brewbuddy from "../assets/projects/brewbuddy.png";
+import todolist from "../assets/projects/todo-list.png";
+import appointment from "../assets/projects/appointment.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +24,7 @@ const ProjectsSection = () => {
       title: "MindBloom — Mental Wellness Platform",
       category: "MERN Stack",
       description:
-        "A full-stack wellness platform with authentication, habit tracking, mood logs, community features, and a rewards system.",
+        "A full-stack mental wellness web app built with React, Node.js, Express, and MongoDB that helps users track mood, build habits, and engage with a supportive community.",
       tech: ["React", "Node.js", "Express", "MongoDB"],
       image: mindbloom,
       code: "https://github.com/Khushbu696/MindBloom",
@@ -58,6 +62,50 @@ const ProjectsSection = () => {
       image: weather,
       code: "https://github.com/Khushbu696/Weather_app",
       demo: "https://khushbu-weather-app.netlify.app/",
+    },
+    {
+      id: 5,
+      title: "Calculator",
+      category: "React Web App",
+      description:
+        "A responsive calculator built using React with modern UI and basic arithmetic operations.",
+      tech: ["React"],
+      image: calculator,
+      code: "https://github.com/Khushbu696/Calculator",
+      demo: "https://k-calculator-app.netlify.app/",
+    },
+    {
+      id: 6,
+      title: "BrewBuddy — Drink Recipe UI/UX App",
+      category: "UI/UX",
+      description:
+        "A UI/UX case study for a mobile app that helps users discover coffee, tea, and wellness drinks offline. Focused on clean design, accessibility, and quick recipe navigation.",
+      tech: ["Figma", "UI/UX Design"],
+      image: brewbuddy,
+      code: "https://github.com/Khushbu696/BrewBuddy-UI-UX",
+      demo: "https://www.figma.com/design/cJMZM1ncpcNg7f7DqegJ9d/My-Projects?node-id=838-205&t=PBTKlr3zh8kTmTES-1",
+    },
+    {
+      id: 7,
+      title: "Appointment Booking System",
+      category: "Java Full-Stack",
+      description:
+        "A full-stack web application that enables users to book appointments with doctors through an intuitive interface. The system allows users to register, log in, view doctor availability, and schedule appointments, while administrators can manage doctor schedules and appointments efficiently.",
+      tech: ["Java", "HTML", "CSS", "JSP/Servlet", "MySQL"],
+      image: appointment,
+      code: "https://github.com/Khushbu696/Appointment-Booking-System",
+      demo: "https://appointment-booking-system-production-ed4c.up.railway.app",
+    },
+    {
+      id: 8,
+      title: "Todo List",
+      category: "React Web App",
+      description:
+        "A simple and efficient task management web application that allows users to create, update, and delete daily tasks.",
+      tech: ["React(Vite)", "CSS", "JavaScript"],
+      image: todolist,
+      code: "https://github.com/Khushbu696/ToDo_List",
+      demo: "https://khushbu-todo-list.netlify.app/",
     },
   ];
 
@@ -130,7 +178,7 @@ const ProjectsSection = () => {
       <h2 className="projects-title">Featured Projects</h2>
 
       <div className="filter-buttons">
-        {["All", "MERN Stack", "React Web App"].map((filter) => (
+        {["All", "MERN Stack", "React Web App", "UI/UX", "Java Full-Stack"].map((filter) => (
           <button
             key={filter}
             className={`filter-btn ${activeFilter === filter ? "active" : ""}`}
