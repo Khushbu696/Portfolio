@@ -4,13 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/ProjectSection.css";
 
 import mindbloom from "../assets/projects/mindbloom.png";
+import appointment from "../assets/projects/appointment.png";
+import brewbuddy from "../assets/projects/brewbuddy.png";
+import todolist from "../assets/projects/todo-list.png";
 import flipmind from "../assets/projects/flipmind.png";
 import quotecraft from "../assets/projects/quotecraft.png";
 import weather from "../assets/projects/weather_app.png";
 import calculator from "../assets/projects/calculator.png";
-import brewbuddy from "../assets/projects/brewbuddy.png";
-import todolist from "../assets/projects/todo-list.png";
-import appointment from "../assets/projects/appointment.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,61 +32,6 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "FlipMind — Memory Card Game",
-      category: "React Web App",
-      description:
-        "An interactive card-matching game where players flip tiles to find pairs, featuring smooth animations and responsive design.",
-      tech: ["React"],
-      image: flipmind,
-      code: "https://github.com/Khushbu696/FlipMind",
-      demo: "https://flipmind.netlify.app/",
-    },
-    {
-      id: 3,
-      title: "QuoteCraft — Inspirational Quotes Generator",
-      category: "React Web App",
-      description:
-        "A minimal quote generator that displays motivational quotes with a clean interface and lightweight UI experience.",
-      tech: ["React"],
-      image: quotecraft,
-      code: "https://github.com/Khushbu696/QuoteCraft",
-      demo: "https://k-quotecraft.netlify.app/",
-    },
-    {
-      id: 4,
-      title: "Weather App — Real-time Weather Dashboard",
-      category: "React Web App",
-      description:
-        "A weather dashboard that fetches real-time temperature, wind speed, and climate conditions using OpenWeather API.",
-      tech: ["React"],
-      image: weather,
-      code: "https://github.com/Khushbu696/Weather_app",
-      demo: "https://khushbu-weather-app.netlify.app/",
-    },
-    {
-      id: 5,
-      title: "Calculator",
-      category: "React Web App",
-      description:
-        "A responsive calculator built using React with modern UI and basic arithmetic operations.",
-      tech: ["React"],
-      image: calculator,
-      code: "https://github.com/Khushbu696/Calculator",
-      demo: "https://k-calculator-app.netlify.app/",
-    },
-    {
-      id: 6,
-      title: "BrewBuddy — Drink Recipe UI/UX App",
-      category: "UI/UX",
-      description:
-        "A UI/UX case study for a mobile app that helps users discover coffee, tea, and wellness drinks offline. Focused on clean design, accessibility, and quick recipe navigation.",
-      tech: ["Figma", "UI/UX Design"],
-      image: brewbuddy,
-      code: "https://github.com/Khushbu696/BrewBuddy-UI-UX",
-      demo: "https://www.figma.com/design/cJMZM1ncpcNg7f7DqegJ9d/My-Projects?node-id=838-205&t=PBTKlr3zh8kTmTES-1",
-    },
-    {
-      id: 7,
       title: "Appointment Booking System",
       category: "Java Full-Stack",
       description:
@@ -97,7 +42,18 @@ const ProjectsSection = () => {
       demo: "https://appointment-booking-system-production-ed4c.up.railway.app",
     },
     {
-      id: 8,
+      id: 3,
+      title: "BrewBuddy — Drink Recipe UI/UX App",
+      category: "UI/UX",
+      description:
+        "A UI/UX case study for a mobile app that helps users discover coffee, tea, and wellness drinks offline. Focused on clean design, accessibility, and quick recipe navigation.",
+      tech: ["Figma", "UI/UX Design"],
+      image: brewbuddy,
+      code: "https://github.com/Khushbu696/BrewBuddy-UI-UX",
+      demo: "https://www.figma.com/design/cJMZM1ncpcNg7f7DqegJ9d/My-Projects?node-id=838-205&t=PBTKlr3zh8kTmTES-1",
+    },
+    {
+      id: 4,
       title: "Todo List",
       category: "React Web App",
       description:
@@ -106,6 +62,50 @@ const ProjectsSection = () => {
       image: todolist,
       code: "https://github.com/Khushbu696/ToDo_List",
       demo: "https://khushbu-todo-list.netlify.app/",
+    },
+    {
+      id: 5,
+      title: "FlipMind — Memory Card Game",
+      category: "React Web App",
+      description:
+        "An interactive card-matching game where players flip tiles to find pairs, featuring smooth animations and responsive design.",
+      tech: ["React"],
+      image: flipmind,
+      code: "https://github.com/Khushbu696/FlipMind",
+      demo: "https://flipmind.netlify.app/",
+    },
+    {
+      id: 6,
+      title: "QuoteCraft — Inspirational Quotes Generator",
+      category: "React Web App",
+      description:
+        "A minimal quote generator that displays motivational quotes with a clean interface and lightweight UI experience.",
+      tech: ["React"],
+      image: quotecraft,
+      code: "https://github.com/Khushbu696/QuoteCraft",
+      demo: "https://k-quotecraft.netlify.app/",
+    },
+    {
+      id: 7,
+      title: "Weather App — Real-time Weather Dashboard",
+      category: "React Web App",
+      description:
+        "A weather dashboard that fetches real-time temperature, wind speed, and climate conditions using OpenWeather API.",
+      tech: ["React"],
+      image: weather,
+      code: "https://github.com/Khushbu696/Weather_app",
+      demo: "https://khushbu-weather-app.netlify.app/",
+    },
+    {
+      id: 8,
+      title: "Calculator",
+      category: "React Web App",
+      description:
+        "A responsive calculator built using React with modern UI and basic arithmetic operations.",
+      tech: ["React"],
+      image: calculator,
+      code: "https://github.com/Khushbu696/Calculator",
+      demo: "https://k-calculator-app.netlify.app/",
     },
   ];
 
