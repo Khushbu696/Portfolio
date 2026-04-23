@@ -1,6 +1,6 @@
 # 🚀 Khushbu Patel – Personal Portfolio
 
-A modern, animated portfolio website built with React (Vite) to showcase my projects, technical skills, certifications, and contact information.
+A modern, animated portfolio website built with Next.js to showcase my projects, technical skills, certifications, and contact information.
 
 This portfolio reflects my approach to development — combining clean architecture, smooth user experience, and thoughtful design.
 
@@ -13,21 +13,15 @@ https://khushbu-patel-portfolio.netlify.app/
 
 ## ✨ Highlights
 
-⚡ Built with React (Vite) for fast performance
-
-🎬 Smooth animations powered by GSAP
-
-🎨 Custom 3D animated logo intro
+⚡ Built with Next.js for fast performance
 
 📱 Fully responsive across devices
 
 🛠️ Interactive project filtering system
 
-🪟 Modal-based certificate viewer
-
 📩 Functional contact form using EmailJS
 
-🌙 Clean dark-themed and light-themed modern UI
+🌙 Clean dark-themed modern UI
 
 ---
 
@@ -35,17 +29,9 @@ https://khushbu-patel-portfolio.netlify.app/
 
 Frontend
 
-- React (Vite)
-
-- JavaScript (ES6+)
+- Next.js
 
 - CSS3 (Custom Styling)
-
-Animations
-
-- GSAP (GreenSock Animation Platform)
-
-- Scroll-triggered transitions
 
 Services
 
@@ -57,22 +43,7 @@ Services
 
 ## 📸 Preview
 
-You can view the live version here:
-👉 https://khushbu-patel-portfolio.netlify.app/
-
-![Portfolio Preview](./screenshots/hero.jpeg)
-
----
-
-## 📁 Project Structure
-src/  
-├── assets/  
-├── components/  
-├── styles/  
-├── App.jsx  
-└── main.jsx
-
-The project is structured for scalability and clean component separation.
+![Portfolio Preview](./public/hero.jpeg)
 
 ---
 
