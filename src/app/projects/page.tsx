@@ -9,6 +9,15 @@ export const metadata: Metadata = {
 
 const projectsData = [
   {
+    title: 'CodeQuery – Developer Q&A Platform',
+    description: "A full-stack Q&A platform inspired by Stack Overflow, enabling developers to ask questions, share solutions, and engage in discussions. Features an AI-powered moderation system using Groq LLM to detect abusive or spam content, along with a strike-based user control mechanism. Includes authentication, post/reply system, tagging, search, image uploads, and a comprehensive admin dashboard for platform monitoring. Built with a focus on security, scalability, and real-world backend architecture.",
+    image: '/projects/codequery.jpeg',
+    stack: ["React", "Vite", "Node.js", "Express.js", "MongoDB Atlas", "Groq API", "Cloudinary", ],
+    githubUrl: 'https://github.com/Khushbu696/CodeQuery',
+    liveUrl: 'https://codequery-app.netlify.app/',
+    category: 'MERN'
+  },
+  {
     title: 'MindBloom – Mental Wellness Tracker',
     description: "A full-stack mental wellness web application designed to help users build healthier habits and track their emotional journey. Users can log daily moods with emoji and notes, maintain habit streaks with automatic daily/weekly resets, engage with an anonymous community, and unlock achievements through a points-based rewards system. A personal dashboard brings everything together with a summary of today's mood, habit progress, and recent milestones.",
     image: '/projects/mindbloom.png',
