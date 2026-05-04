@@ -90,28 +90,44 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Skills</h2>
           <div className={styles.skillsGrid}>
             <div className={styles.skillCategory}>
+              <h3>Languages</h3>
+              <div className={styles.skillTags}>
+                <span>C++</span>
+                <span>JavaScript</span>
+                <span>Java</span>
+              </div>
+            </div>
+
+            <div className={styles.skillCategory}>
               <h3>Frontend</h3>
               <div className={styles.skillTags}>
                 <span>React</span>
                 <span>Next.js</span>
-                <span>TypeScript</span>
                 <span>HTML/CSS</span>
               </div>
             </div>
+
             <div className={styles.skillCategory}>
               <h3>Backend</h3>
               <div className={styles.skillTags}>
                 <span>Node.js</span>
                 <span>Express</span>
-                <span>PostgreSQL</span>
-                <span>MongoDB</span>
+                <span>Spring Boot</span>
               </div>
             </div>
+
+            <div className={styles.skillCategory}>
+              <h3>Databases</h3>
+              <div className={styles.skillTags}>
+                <span>MongoDB</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+
             <div className={styles.skillCategory}>
               <h3>Tools & Design</h3>
               <div className={styles.skillTags}>
                 <span>Git</span>
-                <span>Docker</span>
                 <span>Figma</span>
                 <span>UI/UX</span>
               </div>
