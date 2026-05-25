@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 const certificatesData = [
   {
-    title: 'AI TOOLS WORKSHOP',
-    issuer: 'Be10X',
-    image: '/certificates/be10x_cer.jpeg',
-    certificateUrl: 'https://drive.google.com/file/d/1e7-vMItZ033j7-DJYe_6-WqCtY60GR4X/view?usp=drive_link',
+    title: 'Cloud Computing',
+    issuer: 'NPTEL',
+    image: '/certificates/cloud_computing_nptel.jpeg',
+    certificateUrl: 'https://nptel.ac.in/noc/E_Certificate/NPTEL26CS55S105040059704604549',
   },
   {
     title: 'React (Basic)',
