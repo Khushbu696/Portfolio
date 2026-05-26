@@ -44,7 +44,7 @@ export default function ProjectCard({
           )}
           {liveUrl && (
             <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-              Live Demo
+              Live
             </a>
           )}
           {youtubeUrl && (

@@ -12,7 +12,7 @@ const projectsData = [
     title: 'CodeQuery – Developer Q&A Platform',
     description: "A full-stack Q&A platform inspired by Stack Overflow, enabling developers to ask questions, share solutions, and engage in discussions. Features an AI-powered moderation system using Groq LLM to detect abusive or spam content, along with a strike-based user control mechanism. Includes authentication, post/reply system, tagging, search, image uploads, and a comprehensive admin dashboard for platform monitoring. Built with a focus on security, scalability, and real-world backend architecture.",
     image: '/projects/codequery.jpeg',
-    stack: ["React", "Vite", "Node.js", "Express.js", "MongoDB Atlas", "Groq API", "Cloudinary", ],
+    stack: ["React", "Vite", "Node.js", "Express.js", "MongoDB Atlas", "Groq API", "Cloudinary"],
     githubUrl: 'https://github.com/Khushbu696/CodeQuery',
     liveUrl: 'https://codequery-app.netlify.app/',
     category: 'MERN'
