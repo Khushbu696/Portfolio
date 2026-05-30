@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
@@ -10,6 +9,7 @@ interface ProjectCardProps {
   githubUrl?: string;
   liveUrl?: string;
   youtubeUrl?: string;
+  apiDocUrl?: string;
 }
 
 export default function ProjectCard({
@@ -20,6 +20,7 @@ export default function ProjectCard({
   githubUrl,
   liveUrl,
   youtubeUrl,
+  apiDocUrl,
 }: ProjectCardProps) {
   return (
     <div className={styles.card}>
@@ -50,6 +51,11 @@ export default function ProjectCard({
           {youtubeUrl && (
             <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
               YouTube
+            </a>
+          )}
+          {apiDocUrl && (
+            <a href={apiDocUrl} target="_blank" rel="noopener noreferrer">
+              API Docs
             </a>
           )}
         </div>

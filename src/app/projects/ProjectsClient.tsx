@@ -12,6 +12,7 @@ interface Project {
   githubUrl: string;
   liveUrl?: string;
   youtubeUrl?: string;
+  apiDocUrl?: string;
   category: string;
 }
 
@@ -54,6 +55,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
               githubUrl={project.githubUrl}
               liveUrl={project.liveUrl}
               youtubeUrl={project.youtubeUrl}
+              apiDocUrl={project.apiDocUrl}
             />
           ))}
         </div>

@@ -148,6 +148,7 @@ export default function Home() {
               stack={["React", "Vite", "Node.js", "Express.js", "MongoDB Atlas", "Groq API", "Cloudinary"]}
               githubUrl='https://github.com/Khushbu696/CodeQuery'
               liveUrl="https://codequery-app.netlify.app/"
+              apiDocUrl="https://documenter.getpostman.com/view/39216679/2sBXwnsrid"
             />
             <ProjectCard
               title="API Rate Limiter & Monitoring System"
@@ -155,6 +156,7 @@ export default function Home() {
               image="/projects/rate_limiter.jpeg"
               stack={["Java", "Spring Boot", "Spring Security", "MySQL", "Next.js", "TypeScript", "Recharts"]}
               githubUrl="https://github.com/Khushbu696/Rate_Limiter"
+              apiDocUrl="https://documenter.getpostman.com/view/39216679/2sBXqCNiTR"
             />
           </div>
           <div className={styles.viewAllWrapper}>

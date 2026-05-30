@@ -15,15 +15,8 @@ const projectsData = [
     stack: ["React", "Vite", "Node.js", "Express.js", "MongoDB Atlas", "Groq API", "Cloudinary"],
     githubUrl: 'https://github.com/Khushbu696/CodeQuery',
     liveUrl: 'https://codequery-app.netlify.app/',
-    category: 'MERN'
-  },
-  {
-    title: 'MindBloom – Mental Wellness Tracker',
-    description: "A full-stack mental wellness web application designed to help users build healthier habits and track their emotional journey. Users can log daily moods with emoji and notes, maintain habit streaks with automatic daily/weekly resets, engage with an anonymous community, and unlock achievements through a points-based rewards system. A personal dashboard brings everything together with a summary of today's mood, habit progress, and recent milestones.",
-    image: '/projects/mindbloom.png',
-    stack: ["React", "Node.js", "Express.js", "MongoDB Atlas"],
-    githubUrl: 'https://github.com/Khushbu696/MindBloom',
-    liveUrl: 'https://k-mindbloom.netlify.app',
+    youtubeUrl: 'https://youtu.be/lrIF9ft01cU',
+    apiDocUrl: 'https://documenter.getpostman.com/view/39216679/2sBXwnsrid',
     category: 'MERN'
   },
   {
@@ -33,7 +26,19 @@ const projectsData = [
     stack: ["Java", "Spring Boot", "Spring Security", "MySQL", "Next.js", "TypeScript", "Recharts"],
     githubUrl: 'https://github.com/Khushbu696/Rate_Limiter',
     youtubeUrl: 'https://youtu.be/ScePRdUNRNw?si=0iFxCy3brB3P__K5',
+    apiDocUrl: 'https://documenter.getpostman.com/view/39216679/2sBXqCNiTR',
     category: 'Java Full-Stack'
+  },
+  {
+    title: 'MindBloom – Mental Wellness Tracker',
+    description: "A full-stack mental wellness web application designed to help users build healthier habits and track their emotional journey. Users can log daily moods with emoji and notes, maintain habit streaks with automatic daily/weekly resets, engage with an anonymous community, and unlock achievements through a points-based rewards system. A personal dashboard brings everything together with a summary of today's mood, habit progress, and recent milestones.",
+    image: '/projects/mindbloom.png',
+    stack: ["React", "Node.js", "Express.js", "MongoDB Atlas"],
+    githubUrl: 'https://github.com/Khushbu696/MindBloom',
+    liveUrl: 'https://k-mindbloom.netlify.app',
+    youtubeUrl: 'https://youtu.be/zs8yB1loTUY',
+    apiDocUrl: 'https://documenter.getpostman.com/view/39216679/2sBXwmRYck',
+    category: 'MERN'
   },
   {
     title: 'Leave Management System',
