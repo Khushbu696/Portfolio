@@ -63,6 +63,7 @@ const projectsData = [
     stack: ["Java Servlets", "JSP", "MySQL", "Apache Tomcat"],
     githubUrl: 'https://github.com/Khushbu696/Appointment-Booking-System',
     youtubeUrl: 'https://youtu.be/Q-iE_L3CNxE?si=Y_TbJTRg1PoMcgL3',
+    apiDocUrl: 'https://documenter.getpostman.com/view/39216679/2sBXwtoor5',
     category: 'Java Full-Stack'
   },
   {
