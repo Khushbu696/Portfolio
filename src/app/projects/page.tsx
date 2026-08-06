@@ -30,6 +30,15 @@ const projectsData = [
     category: 'Java Full-Stack'
   },
   {
+    title: 'EcoTrack – Sustainability Dashboard',
+    description: "EcoTrack is a full-stack sustainability dashboard that helps users track eco-friendly habits, set goals, join challenges, and monitor their environmental impact. The app combines a React frontend with an Express and MongoDB backend to provide a polished experience for personal impact tracking and community engagement.",
+    image: '/projects/ecotrack.jpeg',
+    stack: ["React", "Node.js", "Express.js", "MongoDB Atlas"],
+    githubUrl: 'https://github.com/Khushbu696/EcoTrack',
+    liveUrl: 'https://eco-track-green.netlify.app',
+    category: 'MERN'
+  },
+  {
     title: 'MindBloom – Mental Wellness Tracker',
     description: "A full-stack mental wellness web application designed to help users build healthier habits and track their emotional journey. Users can log daily moods with emoji and notes, maintain habit streaks with automatic daily/weekly resets, engage with an anonymous community, and unlock achievements through a points-based rewards system. A personal dashboard brings everything together with a summary of today's mood, habit progress, and recent milestones.",
     image: '/projects/mindbloom.png',
