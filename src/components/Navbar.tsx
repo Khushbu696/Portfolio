@@ -31,7 +31,7 @@ export default function Navbar() {
             <li><Link href="/certificates" onClick={() => setIsOpen(false)}>Certificates</Link></li>
             <li><Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
             <li>
-              <a href="/Patel_Khushbu.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+              <a href="/Patel_Khushbu_java.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                 Resume
               </a>
             </li>
