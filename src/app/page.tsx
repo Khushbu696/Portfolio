@@ -77,8 +77,8 @@ export default function Home() {
             <div className={styles.educationItem}>
               <h3>B.Tech in Computer Science and Engineering</h3>
               <p className={styles.year}>2024 – 2028</p>
-              <p className={styles.college}>Rai University X CodingGita</p>
-              <p>CGPA: 9.81</p>
+              <p className={styles.college}>CodingGita X Rai University</p>
+              <p>CGPA: 9.04</p>
             </div>
           </div>
         </div>
