@@ -10,6 +10,7 @@ interface ProjectCardProps {
   liveUrl?: string;
   youtubeUrl?: string;
   apiDocUrl?: string;
+  itchUrl?: string;
 }
 
 export default function ProjectCard({
@@ -21,6 +22,7 @@ export default function ProjectCard({
   liveUrl,
   youtubeUrl,
   apiDocUrl,
+  itchUrl,
 }: ProjectCardProps) {
   return (
     <div className={styles.card}>
@@ -56,6 +58,11 @@ export default function ProjectCard({
           {apiDocUrl && (
             <a href={apiDocUrl} target="_blank" rel="noopener noreferrer">
               API Docs
+            </a>
+          )}
+          {itchUrl && (
+            <a href={itchUrl} target="_blank" rel="noopener noreferrer">
+              itch.io
             </a>
           )}
         </div>

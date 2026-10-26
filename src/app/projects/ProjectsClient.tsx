@@ -13,6 +13,7 @@ interface Project {
   liveUrl?: string;
   youtubeUrl?: string;
   apiDocUrl?: string;
+  itchUrl?: string;
   category: string;
 }
 
@@ -20,7 +21,7 @@ interface ProjectsClientProps {
   projects: Project[];
 }
 
-const FILTER_OPTIONS = ['All', 'MERN', 'React Web App', 'UI/UX', 'Java Full-Stack'];
+const FILTER_OPTIONS = ['All', 'MERN', 'React Web App', 'UI/UX', 'Java Full-Stack', 'Game Development'];
 
 export default function ProjectsClient({ projects }: ProjectsClientProps) {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -56,6 +57,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
               liveUrl={project.liveUrl}
               youtubeUrl={project.youtubeUrl}
               apiDocUrl={project.apiDocUrl}
+              itchUrl={project.itchUrl}
             />
           ))}
         </div>

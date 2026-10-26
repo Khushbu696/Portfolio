@@ -119,6 +119,15 @@ const projectsData = [
     githubUrl: 'https://github.com/Khushbu696/Weather_app',
     liveUrl: 'https://khushbu-weather-app.netlify.app/',
     category: 'React Web App'
+  },
+  {
+    title: 'Just This Once',
+    description: 'A narrative-driven 2D game about kindness, boundaries, and self-respect.',
+    image: '/projects/JTO_Game_Cover.png',
+    stack: ['Unity', 'C#'],
+    githubUrl: 'https://github.com/Khushbu696/Just_This_Once',
+    itchUrl: 'https://khushbu.itch.io/just-this-once',
+    category: 'Game Development'
   }
 ];
 
